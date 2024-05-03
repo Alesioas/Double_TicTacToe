@@ -29,20 +29,31 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="10dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/buttonStart"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_stroke_black95_press_white"
             android:layout_weight="1"
             android:text="@string/start"
-            android:textColor="@color/black95"
-            android:textSize="50sp"/>
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/quitgame"
+            android:layout_width="350dp"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="45dp"
+            android:text="ВЫХОД"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:onClick="clickexit"/>
     </LinearLayout>
 </RelativeLayout>

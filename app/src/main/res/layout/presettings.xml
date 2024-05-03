@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/background_picture_3_1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startgame"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="СТАРТ"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/setgame"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="НАСТРОЙКИ"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/infogame"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ИНФОРМАЦИЯ"
+            android:background="@drawable/button_stroke_black95_press_white"
+            android:textColor="@color/white"
+            android:layout_marginBottom="45dp"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
