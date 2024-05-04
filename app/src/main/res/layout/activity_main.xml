@@ -52,7 +52,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="45dp"
             android:text="ВЫХОД"
-            android:textColor="@color/white"
+            android:textColor="@color/black95"
             android:textSize="40sp"
             android:onClick="clickexit"/>
     </LinearLayout>
