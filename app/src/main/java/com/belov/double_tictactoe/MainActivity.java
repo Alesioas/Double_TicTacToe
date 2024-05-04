@@ -17,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private long backPressesTime;
+    private Toast backToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +47,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void clickexit(View v){
         if (backPressesTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
             moveTaskToBack(true);
             android.os.Process.killProcess(android.os.Process.myPid());
             System.exit(1);
         } else {
-            Toast.makeText(getBaseContext(), "Нажмите еще раз чтобы выйти", Toast.LENGTH_SHORT).show();
+            backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз чтобы выйти", Toast.LENGTH_SHORT);
+            backToast.show();
         }
         backPressesTime = System.currentTimeMillis();
     }
