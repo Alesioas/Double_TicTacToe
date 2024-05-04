@@ -37,6 +37,18 @@ public class GameStart extends AppCompatActivity {
             }
             }
         });
+        Button buttonStart = (Button)findViewById(R.id.startgame);
+        buttonStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try{
+                    Intent switcher = new Intent(GameStart.this,FieldGame.class);
+                    GameStart.this.startActivity(switcher);
+                } catch (Exception e) {
+
+                }
+            }
+        });
     }
 
 }
