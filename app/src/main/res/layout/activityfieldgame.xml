@@ -11,20 +11,24 @@
         android:layout_height="wrap_content">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
             <Button
                 android:id="@+id/button1_1"
                 android:onClick="clcBtn1_1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 />
 
             <Button
                 android:id="@+id/button1_2"
                 android:onClick="clcBtn1_2"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
 
@@ -32,23 +36,31 @@
                 android:id="@+id/button1_3"
                 android:onClick="clcBtn1_3"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button1_4"
                 android:onClick="clcBtn1_4"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button1_5"
                 android:onClick="clcBtn1_5"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button1_6"
                 android:onClick="clcBtn1_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
@@ -62,36 +74,48 @@
             <Button
                 android:id="@+id/button2_1"
                 android:onClick="clcBtn2_1"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button2_2"
                 android:onClick="clcBtn2_2"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button2_3"
                 android:onClick="clcBtn2_3"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button2_4"
                 android:onClick="clcBtn2_4"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button2_5"
                 android:onClick="clcBtn2_5"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button2_6"
                 android:onClick="clcBtn2_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
@@ -105,35 +129,47 @@
                 android:id="@+id/button3_1"
                 android:onClick="clcBtn3_1"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button3_2"
                 android:onClick="clcBtn3_2"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button3_3"
                 android:onClick="clcBtn3_3"
                 android:layout_width="60dp"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button3_4"
                 android:onClick="clcBtn3_4"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button3_5"
                 android:onClick="clcBtn3_5"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button3_6"
                 android:onClick="clcBtn3_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
@@ -147,36 +183,48 @@
             <Button
                 android:id="@+id/button4_1"
                 android:onClick="clcBtn4_1"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button4_2"
                 android:onClick="clcBtn4_2"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button4_3"
                 android:onClick="clcBtn4_3"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button4_4"
                 android:onClick="clcBtn4_4"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button4_5"
                 android:onClick="clcBtn4_5"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button4_6"
                 android:onClick="clcBtn4_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
@@ -189,36 +237,48 @@
             <Button
                 android:id="@+id/button5_1"
                 android:onClick="clcBtn5_1"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button5_2"
                 android:onClick="clcBtn5_2"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button5_3"
                 android:onClick="clcBtn5_3"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button5_4"
                 android:onClick="clcBtn5_4"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button5_5"
                 android:onClick="clcBtn5_5"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button5_6"
                 android:onClick="clcBtn5_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
@@ -230,40 +290,64 @@
 
             <Button
                 android:id="@+id/button6_1"
+                android:onClick="clcBtn6_1"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button6_2"
                 android:onClick="clcBtn6_2"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button6_3"
                 android:onClick="clcBtn6_3"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button6_4"
                 android:onClick="clcBtn6_4"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button6_5"
                 android:onClick="clcBtn6_5"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
             <Button
                 android:id="@+id/button6_6"
                 android:onClick="clcBtn6_6"
+                android:paddingTop="0dp"
+                android:textSize="45dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 />
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewfield"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
 </RelativeLayout>
