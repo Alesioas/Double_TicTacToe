@@ -654,6 +654,90 @@ public class FieldGame extends AppCompatActivity {
             textView.setText(R.string.winner_message);
         }
 
+        if ((button4_1.getText() == krestt && button5_2.getText() == krestt && button6_3.getText() == krestt
+                && button7_4.getText() == krestt && button8_5.getText() == krestt && button9_6.getText() == krestt) ||
+                (button1_4.getText() == krestt && button2_5.getText() == krestt && button3_6.getText() == krestt
+                        && button4_7.getText() == krestt && button5_8.getText() == krestt && button6_9.getText() == krestt) ||
+                (button3_1.getText() == krestt && button4_2.getText() == krestt && button5_3.getText() == krestt
+                        && button6_4.getText() == krestt && button7_5.getText() == krestt && button8_6.getText() == krestt) ||
+                (button9_7.getText() == krestt && button4_2.getText() == krestt && button5_3.getText() == krestt
+                        && button6_4.getText() == krestt && button7_5.getText() == krestt && button8_6.getText() == krestt) ||
+                (button1_3.getText() == krestt && button2_4.getText() == krestt && button3_5.getText() == krestt
+                        && button4_6.getText() == krestt && button5_7.getText() == krestt && button6_8.getText() == krestt) ||
+                (button7_9.getText() == krestt && button2_4.getText() == krestt && button3_5.getText() == krestt
+                        && button4_6.getText() == krestt && button5_7.getText() == krestt && button6_8.getText() == krestt)
+        ){
+            textView.setText(R.string.winner_message);
+        }
+
+        if ((button1_2.getText() == krestt && button2_3.getText() == krestt && button3_4.getText() == krestt
+                && button4_5.getText() == krestt && button5_6.getText() == krestt && button6_7.getText() == krestt) ||
+                (button7_8.getText() == krestt && button2_3.getText() == krestt && button3_4.getText() == krestt
+                        && button4_5.getText() == krestt && button5_6.getText() == krestt && button6_7.getText() == krestt) ||
+                (button7_8.getText() == krestt && button8_9.getText() == krestt && button3_4.getText() == krestt
+                        && button4_5.getText() == krestt && button5_6.getText() == krestt && button6_7.getText() == krestt) ||
+                (button2_1.getText() == krestt && button3_2.getText() == krestt && button4_3.getText() == krestt
+                        && button5_4.getText() == krestt && button6_5.getText() == krestt && button7_6.getText() == krestt) ||
+                (button8_7.getText() == krestt && button3_2.getText() == krestt && button4_3.getText() == krestt
+                        && button5_4.getText() == krestt && button6_5.getText() == krestt && button7_6.getText() == krestt) ||
+                (button8_7.getText() == krestt && button9_8.getText() == krestt && button4_3.getText() == krestt
+                        && button5_4.getText() == krestt && button6_5.getText() == krestt && button7_6.getText() == krestt) ||
+
+                (button1_1.getText() == krestt && button2_2.getText() == krestt && button3_3.getText() == krestt
+                        && button4_4.getText() == krestt && button5_5.getText() == krestt && button6_6.getText() == krestt) ||
+                (button7_7.getText() == krestt && button2_2.getText() == krestt && button3_3.getText() == krestt
+                        && button4_4.getText() == krestt && button5_5.getText() == krestt && button6_6.getText() == krestt) ||
+                (button7_7.getText() == krestt && button8_8.getText() == krestt && button3_3.getText() == krestt
+                        && button4_4.getText() == krestt && button5_5.getText() == krestt && button6_6.getText() == krestt) ||
+                (button7_7.getText() == krestt && button8_8.getText() == krestt && button9_9.getText() == krestt
+                        && button4_4.getText() == krestt && button5_5.getText() == krestt && button6_6.getText() == krestt)
+        ){
+            textView.setText(R.string.winner_message);
+        }
+
+        if ((button6_1.getText() == krestt && button5_2.getText() == krestt && button4_3.getText() == krestt
+                && button3_4.getText() == krestt && button2_5.getText() == krestt && button1_6.getText() == krestt) ||
+                (button9_4.getText() == krestt && button8_5.getText() == krestt && button7_6.getText() == krestt
+                        && button6_7.getText() == krestt && button5_8.getText() == krestt && button4_9.getText() == krestt) ||
+
+                (button7_1.getText() == krestt && button6_2.getText() == krestt && button5_3.getText() == krestt
+                        && button4_4.getText() == krestt && button3_5.getText() == krestt && button2_6.getText() == krestt) ||
+                (button1_7.getText() == krestt && button6_2.getText() == krestt && button5_3.getText() == krestt
+                        && button4_4.getText() == krestt && button3_5.getText() == krestt && button2_6.getText() == krestt) ||
+
+                (button9_3.getText() == krestt && button8_4.getText() == krestt && button7_5.getText() == krestt
+                        && button6_6.getText() == krestt && button5_7.getText() == krestt && button4_8.getText() == krestt) ||
+                (button3_9.getText() == krestt && button8_4.getText() == krestt && button7_5.getText() == krestt
+                        && button6_6.getText() == krestt && button5_7.getText() == krestt && button4_8.getText() == krestt) ||
+
+                (button8_1.getText() == krestt && button7_2.getText() == krestt && button6_3.getText() == krestt
+                        && button5_4.getText() == krestt && button4_5.getText() == krestt && button3_6.getText() == krestt) ||
+                (button2_7.getText() == krestt && button7_2.getText() == krestt && button6_3.getText() == krestt
+                        && button5_4.getText() == krestt && button4_5.getText() == krestt && button3_6.getText() == krestt) ||
+                (button2_7.getText() == krestt && button1_8.getText() == krestt && button6_3.getText() == krestt
+                        && button5_4.getText() == krestt && button4_5.getText() == krestt && button3_6.getText() == krestt) ||
+
+                (button9_2.getText() == krestt && button8_3.getText() == krestt && button7_4.getText() == krestt
+                        && button6_5.getText() == krestt && button5_6.getText() == krestt && button4_7.getText() == krestt) ||
+                (button3_8.getText() == krestt && button8_3.getText() == krestt && button7_4.getText() == krestt
+                        && button6_5.getText() == krestt && button5_6.getText() == krestt && button4_7.getText() == krestt) ||
+                (button3_8.getText() == krestt && button2_9.getText() == krestt && button7_4.getText() == krestt
+                        && button6_5.getText() == krestt && button5_6.getText() == krestt && button4_7.getText() == krestt) ||
+
+
+                (button9_1.getText() == krestt && button8_2.getText() == krestt && button7_3.getText() == krestt
+                        && button6_4.getText() == krestt && button5_5.getText() == krestt && button4_6.getText() == krestt) ||
+                (button3_7.getText() == krestt && button8_2.getText() == krestt && button7_3.getText() == krestt
+                        && button6_4.getText() == krestt && button5_5.getText() == krestt && button4_6.getText() == krestt) ||
+                (button3_7.getText() == krestt && button2_8.getText() == krestt && button7_3.getText() == krestt
+                        && button6_4.getText() == krestt && button5_5.getText() == krestt && button4_6.getText() == krestt) ||
+                (button3_7.getText() == krestt && button2_8.getText() == krestt && button1_9.getText() == krestt
+                        && button6_4.getText() == krestt && button5_5.getText() == krestt && button4_6.getText() == krestt)
+        ){
+            textView.setText(R.string.winner_message);
+        }
+
+
 
 
 
