@@ -2,6 +2,7 @@ package com.belov.double_tictactoe;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -12,6 +13,8 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
+
+import java.util.Random;
 
 public class FieldGame extends AppCompatActivity {
     Button button1_1, button1_2, button1_3, button1_4, button1_5, button1_6, button1_7, button1_8, button1_9,
@@ -37,7 +40,7 @@ public class FieldGame extends AppCompatActivity {
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         krestt = "x";
-        nol = "0";
+        nol = "O";
 
         button1_1 = findViewById(R.id.button1_1);
         button1_2 = findViewById(R.id.button1_2);
@@ -136,335 +139,498 @@ public class FieldGame extends AppCompatActivity {
     public void clcBtn1_1(View view) {
         button1_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
     }
+
+
     public void clcBtn1_2(View view) {
         button1_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_3(View view) {
         button1_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_4(View view) {
         button1_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_5(View view) {
         button1_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_6(View view) {
         button1_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_7(View view) {
         button1_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_8(View view) {
         button1_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn1_9(View view) {
         button1_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
 
     public void clcBtn2_1(View view) {
         button2_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_2(View view) {
         button2_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_3(View view) {
         button2_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_4(View view) {
         button2_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_5(View view) {
         button2_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_6(View view) {
         button2_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_7(View view) {
         button2_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_8(View view) {
         button2_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn2_9(View view) {
         button2_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn3_1(View view) {
         button3_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_2(View view) {
         button3_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_3(View view) {
         button3_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_4(View view) {
         button3_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_5(View view) {
         button3_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_6(View view) {
         button3_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_7(View view) {
         button3_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_8(View view) {
         button3_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn3_9(View view) {
         button3_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn4_1(View view) {
         button4_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_2(View view) {
         button4_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_3(View view) {
         button4_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_4(View view) {
         button4_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_5(View view) {
         button4_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_6(View view) {
         button4_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_7(View view) {
         button4_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_8(View view) {
         button4_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn4_9(View view) {
         button4_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn5_1(View view) {
         button5_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_2(View view) {
         button5_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_3(View view) {
         button5_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_4(View view) {
         button5_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_5(View view) {
         button5_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_6(View view) {
         button5_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_7(View view) {
         button5_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_8(View view) {
         button5_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn5_9(View view) {
         button5_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn6_1(View view) {
         button6_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_2(View view) {
         button6_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_3(View view) {
         button6_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_4(View view) {
         button6_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_5(View view) {
         button6_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_6(View view) {
         button6_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_7(View view) {
         button6_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_8(View view) {
         button6_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn6_9(View view) {
         button6_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn7_1(View view) {
         button7_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_2(View view) {
         button7_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_3(View view) {
         button7_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_4(View view) {
         button7_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_5(View view) {
         button7_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_6(View view) {
         button7_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_7(View view) {
         button7_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_8(View view) {
         button7_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn7_9(View view) {
         button7_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn8_1(View view) {
         button8_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_2(View view) {
         button8_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_3(View view) {
         button8_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_4(View view) {
         button8_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_5(View view) {
         button8_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_6(View view) {
         button8_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_7(View view) {
         button8_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_8(View view) {
         button8_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn8_9(View view) {
         button8_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void clcBtn9_1(View view) {
         button9_1.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_2(View view) {
         button9_2.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_3(View view) {
         button9_3.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_4(View view) {
         button9_4.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_5(View view) {
         button9_5.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_6(View view) {
         button9_6.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_7(View view) {
         button9_7.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_8(View view) {
         button9_8.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
     public void clcBtn9_9(View view) {
         button9_9.setText(krestt);
         isPlayerWinner();
+        hodPC();
+
     }
 
     public void isPlayerWinner () {
@@ -745,4 +911,101 @@ public class FieldGame extends AppCompatActivity {
 
     }
 
+    private void hodPC() {
+        Random random = new Random();
+        random.nextInt(35);
+        int buttonPcClick = 1 + random.nextInt(81);
+        Log.i("hodPC","buttonPcClick - " + buttonPcClick);
+        switch (buttonPcClick){
+            case (1): button1_1.setText(nol);break;
+            case (2): button1_2.setText(nol);break;
+            case (3): button1_3.setText(nol);break;
+            case (4): button1_4.setText(nol);break;
+            case (5): button1_5.setText(nol);break;
+            case (6): button1_6.setText(nol);break;
+            case (7): button1_7.setText(nol);break;
+            case (8): button1_8.setText(nol);break;
+            case (9): button1_9.setText(nol);break;
+
+            case (10): button2_1.setText(nol);break;
+            case (11): button2_2.setText(nol);break;
+            case (12): button2_3.setText(nol);break;
+            case (13): button2_4.setText(nol);break;
+            case (14): button2_5.setText(nol);break;
+            case (15): button2_6.setText(nol);break;
+            case (16): button2_7.setText(nol);break;
+            case (17): button2_8.setText(nol);break;
+            case (18): button2_9.setText(nol);break;
+
+            case (19): button3_1.setText(nol);break;
+            case (20): button3_2.setText(nol);break;
+            case (21): button3_3.setText(nol);break;
+            case (22): button3_4.setText(nol);break;
+            case (23): button3_5.setText(nol);break;
+            case (24): button3_6.setText(nol);break;
+            case (25): button3_7.setText(nol);break;
+            case (26): button3_8.setText(nol);break;
+            case (27): button3_9.setText(nol);break;
+
+            case (28): button4_1.setText(nol);break;
+            case (29): button4_2.setText(nol);break;
+            case (30): button4_3.setText(nol);break;
+            case (31): button4_4.setText(nol);break;
+            case (32): button4_5.setText(nol);break;
+            case (33): button4_6.setText(nol);break;
+            case (34): button4_7.setText(nol);break;
+            case (35): button4_8.setText(nol);break;
+            case (36): button4_9.setText(nol);break;
+
+            case (37): button5_1.setText(nol);break;
+            case (38): button5_2.setText(nol);break;
+            case (39): button5_3.setText(nol);break;
+            case (40): button5_4.setText(nol);break;
+            case (41): button5_5.setText(nol);break;
+            case (42): button5_6.setText(nol);break;
+            case (43): button5_7.setText(nol);break;
+            case (44): button5_8.setText(nol);break;
+            case (45): button5_9.setText(nol);break;
+
+            case (46): button6_1.setText(nol);break;
+            case (47): button6_2.setText(nol);break;
+            case (48): button6_3.setText(nol);break;
+            case (49): button6_4.setText(nol);break;
+            case (50): button6_5.setText(nol);break;
+            case (51): button6_6.setText(nol);break;
+            case (52): button6_7.setText(nol);break;
+            case (53): button6_8.setText(nol);break;
+            case (54): button6_9.setText(nol);break;
+
+            case (55): button7_1.setText(nol);break;
+            case (56): button7_2.setText(nol);break;
+            case (57): button7_3.setText(nol);break;
+            case (58): button7_4.setText(nol);break;
+            case (59): button7_5.setText(nol);break;
+            case (60): button7_6.setText(nol);break;
+            case (61): button7_7.setText(nol);break;
+            case (62): button7_8.setText(nol);break;
+            case (63): button7_9.setText(nol);break;
+
+            case (64): button8_1.setText(nol);break;
+            case (65): button8_2.setText(nol);break;
+            case (66): button8_3.setText(nol);break;
+            case (67): button8_4.setText(nol);break;
+            case (68): button8_5.setText(nol);break;
+            case (69): button8_6.setText(nol);break;
+            case (70): button8_7.setText(nol);break;
+            case (71): button8_8.setText(nol);break;
+            case (72): button8_9.setText(nol);break;
+
+            case (73): button9_1.setText(nol);break;
+            case (74): button9_2.setText(nol);break;
+            case (75): button9_3.setText(nol);break;
+            case (76): button9_4.setText(nol);break;
+            case (77): button9_5.setText(nol);break;
+            case (78): button9_6.setText(nol);break;
+            case (79): button9_7.setText(nol);break;
+            case (80): button9_8.setText(nol);break;
+            case (81): button9_9.setText(nol);break;
+        }
+    }
 }
