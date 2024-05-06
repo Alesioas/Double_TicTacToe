@@ -2,6 +2,7 @@
     <string name="app_name">Double_TicTacToe</string>
     <string name="start" >ПОЕХАЛИ</string>
     <string name="winner_message" >Поздравляем с победой</string>
+    <string name="pc_winner_message" >Вы проиграли. Победил компьютер</string>
     <dimen name="width_height">45dp</dimen>
     <dimen name="text_size_shape">30dp</dimen>
 
