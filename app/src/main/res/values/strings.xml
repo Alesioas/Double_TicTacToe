@@ -3,10 +3,10 @@
     <string name="start" >ПОЕХАЛИ</string>
     <string name="winner_message" >Победа</string>
     <string name="pc_winner_message" >Вы проиграли. Победил компьютер</string>
-    <dimen name="width_height">45dp</dimen>
+    <dimen name="width_height">40dp</dimen>
     <string name="newGame" >Начать заново</string>
     <string name="draw_message" >Ничья</string>
-    <dimen name="text_size_shape">30dp</dimen>
+    <dimen name="text_size_shape">28dp</dimen>
 
 
 </resources>
