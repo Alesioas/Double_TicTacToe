@@ -4,7 +4,71 @@
     android:background="@drawable/background_picture_3_1"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/iipoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:textSize="40dp"
+            android:text="00"
+            android:textColor="@color/black95"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptypoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/humanpoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:textSize="40dp"
+            android:text="00"
+            android:textColor="@color/black95"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewfield"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
     <TableLayout
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -724,14 +788,19 @@
 
     </TableLayout>
 
-    <TextView
+
+
+    <Button
+        android:id="@+id/restart"
+        android:onClick="clickRestart"
+        android:paddingTop="0dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/newGame"
+        android:textSize="@dimen/text_size_shape"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewfield"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        />
+        android:layout_margin="40dp" />
+
+
 </RelativeLayout>
