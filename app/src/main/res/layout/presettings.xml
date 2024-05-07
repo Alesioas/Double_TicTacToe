@@ -8,54 +8,1075 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_picture_3_1" />
-
+        android:src="@drawable/background_picture_6" />
     <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:orientation="vertical">
-
-        <Button
-            android:id="@+id/startgame"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:text="СТАРТ"
-            android:background="@drawable/button_stroke_black95_press_white"
-            android:textColor="@color/white"
-            android:textSize="40sp" />
-
         <Button
             android:id="@+id/setgame"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="НАСТРОЙКИ"
-            android:background="@drawable/button_stroke_black95_press_white"
-            android:textColor="@color/white"
-            android:textSize="40sp" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/settings"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
 
         <Button
             android:id="@+id/infogame"
-            android:layout_width="350dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+
+            android:background="@drawable/info" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/black_arrow"
+            android:backgroundTint="@color/black" />
+
+
+
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="ИНФОРМАЦИЯ"
-            android:background="@drawable/button_stroke_black95_press_white"
-            android:textColor="@color/white"
-            android:layout_marginBottom="45dp"
-            android:textSize="40sp" />
+            android:id="@+id/iipoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textSize="40dp"
+            android:text="00"
+            android:textColor="@color/black95"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/emptypoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/humanpoints"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:textSize="40dp"
+            android:text="00"
+            android:textColor="@color/black95"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
 
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="260dp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewfield"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button1_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn1_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button2_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn2_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button3_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button3_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn3_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button4_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn4_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button5_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn5_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button6_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button6_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn6_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button7_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn7_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button8_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button8_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn8_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button9_1"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_1"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_2"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_2"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_3"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_3"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_4"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_4"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_5"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_5"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_6"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_6"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_7"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_7"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_8"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_8"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+            <Button
+                android:id="@+id/button9_9"
+                android:layout_width="@dimen/width_height"
+                android:layout_height="@dimen/width_height"
+                android:layout_margin="3dp"
+                android:background="@color/white"
+                android:onClick="clcBtn9_9"
+                android:paddingTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_shape" />
+
+        </TableRow>
+
+    </TableLayout>
+
     <Button
-        android:id="@+id/back_btn"
-        android:layout_width="94dp"
-        android:layout_height="108dp"
-        android:background="@drawable/white_arrow"
-        android:backgroundTint="@color/white" />
+        android:id="@+id/restart"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-455dp"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:onClick="clickRestart"
+        android:text="@string/newGame"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_shape" />
 
 
 </RelativeLayout>
