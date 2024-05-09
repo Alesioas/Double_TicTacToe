@@ -44,6 +44,8 @@ public class GameStart extends AppCompatActivity {
 
         Button button_back = (Button) findViewById(R.id.back_btn);
         button_back.setOnClickListener(new View.OnClickListener() {
+
+            //Функция для кнопки
             @Override
             public void onClick(View v) {
 
@@ -160,6 +162,9 @@ public class GameStart extends AppCompatActivity {
             textView.setText("");
 
         }
+
+     // множнство одинаковых функций отрабатывания нажатия на кнопку на поле игры
+
         public void clcBtn1_1(View view) {
             if ((button1_1.getText() == "") && (textView.getText() == "")){
                 button1_1.setText(krestt);
@@ -1334,6 +1339,8 @@ public class GameStart extends AppCompatActivity {
             }
         }
 
+    //множнство функций с проверкой победы игрока
+
         public void isPlayerWinner () {
             if ((button1_1.getText() == krestt && button1_2.getText() == krestt && button1_3.getText() == krestt
                     && button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt) ||
@@ -1708,6 +1715,9 @@ public class GameStart extends AppCompatActivity {
 
         }
 
+
+    //множнство функций с проверкой победы компьютера
+
         public void isPCWinner () {
             if ((button1_1.getText() == nol && button1_2.getText() == nol && button1_3.getText() == nol
                     && button1_4.getText() == nol && button1_5.getText() == nol && button1_6.getText() == nol) ||
@@ -2056,6 +2066,7 @@ public class GameStart extends AppCompatActivity {
 
 
         }
+        //множнство функций для реации компьютера после моего хода
 
         private void hodPC() {
             Random random = new Random();
@@ -2805,6 +2816,8 @@ public class GameStart extends AppCompatActivity {
 
             }
         }
+
+        //функция для обновления поля
         public void clickRestart(View view){
             button1_1.setText("");
             button1_2.setText("");
@@ -2972,16 +2985,4 @@ public class GameStart extends AppCompatActivity {
             counter = 0;
 
         }
-        /*Button buttonStart = (Button)findViewById(R.id.startgame);
-        buttonStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try{
-                    Intent switcher = new Intent(GameStart.this,FieldGame.class);
-                    GameStart.this.startActivity(switcher);
-                } catch (Exception e) {
-
-                }
-            }
-        });*/
     }

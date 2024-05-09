@@ -44,6 +44,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+
         <Button
             android:layout_marginLeft="15dp"
             android:layout_marginTop="45dp"
@@ -100,11 +102,24 @@
             />
 
 
+
+
     </LinearLayout>
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_stroke_black95_press_white"
+        android:onClick="clickRestart"
+        android:text="@string/newGame"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_shape" />
 
     <TextView
         android:layout_width="260dp"
-
         android:layout_height="wrap_content"
         android:id="@+id/textViewfield"
         android:layout_alignParentTop="true"
@@ -1066,19 +1081,6 @@
         </TableRow>
 
     </TableLayout>
-
-    <Button
-        android:id="@+id/restart"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tableLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-455dp"
-        android:background="@drawable/button_stroke_black95_press_white"
-        android:onClick="clickRestart"
-        android:text="@string/newGame"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_shape" />
 
 
 </RelativeLayout>

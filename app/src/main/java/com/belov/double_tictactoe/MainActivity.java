@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     private long backPressesTime;
     private Toast backToast;
+
+
+    //Функция для кнопки ПОЕХАЛИ
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+    ///Функция для кнопки выхода из приложения
     public void clickexit(View v){
         if (backPressesTime + 2000 > System.currentTimeMillis()){
             backToast.cancel();
