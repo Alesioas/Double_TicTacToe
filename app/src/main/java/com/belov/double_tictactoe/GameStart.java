@@ -31,7 +31,7 @@ public class GameStart extends AppCompatActivity {
 
     String krestt, nol;
     TextView textView, humanpoints, iipoints;
-    Integer pointsOfHuman = 0, pointsOfPC = 0, counter = 0;
+    Integer pointsOfHuman = 0, pointsOfPC = 0, counter = 0, row = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,1184 +162,1186 @@ public class GameStart extends AppCompatActivity {
             textView.setText("");
 
         }
-
-     // множнство одинаковых функций отрабатывания нажатия на кнопку на поле игры
-
-        public void clcBtn1_1(View view) {
-            if ((button1_1.getText() == "") && (textView.getText() == "")){
-                button1_1.setText(krestt);
-                button1_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
+    public void clcBtn1_1(View view) {
+        if ((button1_1.getText() == "") && (textView.getText() == "")){
+            button1_1.setText(krestt);
+            button1_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
                         hodPC();}}
-                    counter = 0;
-                }
+                counter = 0;
+            }
+        }
+    }
+
+
+    public void clcBtn1_2(View view) {
+        if (button1_2.getText() == "" && (textView.getText() == "")){
+            button1_2.setText(krestt);
+            button1_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-
-        public void clcBtn1_2(View view) {
-            if (button1_2.getText() == "" && (textView.getText() == "")){
-                button1_2.setText(krestt);
-                button1_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_3(View view) {
-            if (button1_3.getText() == "" && (textView.getText() == "")){
-                button1_3.setText(krestt);
-                button1_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_4(View view) {
-            if (button1_4.getText() == "" && (textView.getText() == "")){
-                button1_4.setText(krestt);
-                button1_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_5(View view) {
-            if (button1_5.getText() == "" && (textView.getText() == "")){
-                button1_5.setText(krestt);
-                button1_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_6(View view) {
-            if (button1_6.getText() == "" && (textView.getText() == "")){
-                button1_6.setText(krestt);
-                counter++;
-                button1_6.setBackgroundColor(Color.BLUE);
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_7(View view) {
-            if (button1_7.getText() == "" && (textView.getText() == "")){
-                button1_7.setText(krestt);
-                button1_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_8(View view) {
-            if (button1_8.getText() == "" && (textView.getText() == "")){
-                button1_8.setText(krestt);
-                button1_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn1_9(View view) {
-            if (button1_9.getText() == "" && (textView.getText() == "")){
-                button1_9.setText(krestt);
-                button1_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-
-
-        public void clcBtn2_1(View view) {
-            if (button2_1.getText() == "" && (textView.getText() == "")){
-                button2_1.setText(krestt);
-                button2_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_2(View view) {
-            if (button2_2.getText() == "" && (textView.getText() == "")){
-                button2_2.setText(krestt);
-                button2_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_3(View view) {
-            if (button2_3.getText() == "" && (textView.getText() == "")){
-                button2_3.setText(krestt);
-                button2_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_4(View view) {
-            if (button2_4.getText() == "" && (textView.getText() == "")){
-                button2_4.setText(krestt);
-                button2_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_5(View view) {
-            if (button2_5.getText() == "" && (textView.getText() == "")){
-                button2_5.setText(krestt);
-                button2_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_6(View view) {
-            if (button2_6.getText() == "" && (textView.getText() == "")){
-                button2_6.setText(krestt);
-                button2_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_7(View view) {
-            if (button2_7.getText() == "" && (textView.getText() == "")){
-                button2_7.setText(krestt);
-                button2_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_8(View view) {
-            if (button2_8.getText() == "" && (textView.getText() == "")){
-                button2_8.setText(krestt);
-                button2_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn2_9(View view) {
-            if (button2_9.getText() == "" && (textView.getText() == "")){
-                button2_9.setText(krestt);
-                button2_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-
-        public void clcBtn3_1(View view) {
-            if (button3_1.getText() == "" && (textView.getText() == "")){
-                button3_1.setText(krestt);
-                button3_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_2(View view) {
-            if (button3_2.getText() == "" && (textView.getText() == "")){
-                button3_2.setText(krestt);
-                button3_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_3(View view) {
-            if (button3_3.getText() == "" && (textView.getText() == "")){
-                button3_3.setText(krestt);
-                button3_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_4(View view) {
-            if (button3_4.getText() == "" && (textView.getText() == "")){
-                button3_4.setText(krestt);
-                button3_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_5(View view) {
-            if (button3_5.getText() == "" && (textView.getText() == "")){
-                button3_5.setText(krestt);
-                button3_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_6(View view) {
-            if (button3_6.getText() == "" && (textView.getText() == "")){
-                button3_6.setText(krestt);
-                button3_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_7(View view) {
-            if (button3_7.getText() == "" && (textView.getText() == "")){
-                button3_7.setText(krestt);
-                button3_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_8(View view) {
-            if (button3_8.getText() == "" && (textView.getText() == "")){
-                button3_8.setText(krestt);
-                button3_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn3_9(View view) {
-            if (button3_9.getText() == "" && (textView.getText() == "")){
-                button3_9.setText(krestt);
-                button3_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-
-        public void clcBtn4_1(View view) {
-            if (button4_1.getText() == "" && (textView.getText() == "")){
-                button4_1.setText(krestt);
-                button4_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn4_2(View view) {
-            if (button4_2.getText() == "" && (textView.getText() == "")){
-                button4_2.setText(krestt);
-                button4_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn4_3(View view) {
-            if (button4_3.getText() == "" && (textView.getText() == "")){
-                button4_3.setBackgroundColor(Color.BLUE);
-                button4_3.setText(krestt);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn4_4(View view) {
-            if (button4_4.getText() == "" && (textView.getText() == "")){
-                button4_4.setText(krestt);
-                button4_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn4_5(View view) {
-            if (button4_5.getText() == "" && (textView.getText() == "")){
-                button4_5.setText(krestt);
-                button4_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-
-        }
-        public void clcBtn4_6(View view) {
-            if (button4_6.getText() == "" && (textView.getText() == "")){
-                button4_6.setText(krestt);
-                button4_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn4_7(View view) {
-            if (button4_7.getText() == "" && (textView.getText() == "")){
-                button4_7.setText(krestt);
-                button4_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn4_8(View view) {
-            if (button4_8.getText() == "" && (textView.getText() == "")){
-                button4_8.setText(krestt);
-                button4_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn4_9(View view) {
-            if (button4_9.getText() == "" && (textView.getText() == "")){
-                button4_9.setText(krestt);
-                button4_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_3(View view) {
+        if (button1_3.getText() == "" && (textView.getText() == "")){
+            button1_3.setText(krestt);
+            button1_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-        public void clcBtn5_1(View view) {
-            if (button5_1.getText() == "" && (textView.getText() == "")){
-                button5_1.setText(krestt);
-                button5_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_2(View view) {
-            if (button5_2.getText() == "" && (textView.getText() == "")){
-                button5_2.setText(krestt);
-                button5_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_3(View view) {
-            if (button5_3.getText() == "" && (textView.getText() == "")){
-                button5_3.setText(krestt);
-                button5_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_4(View view) {
-            if (button5_4.getText() == "" && (textView.getText() == "")){
-                button5_4.setText(krestt);
-                button5_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_5(View view) {
-            if (button5_5.getText() == "" && (textView.getText() == "")){
-                button5_5.setText(krestt);
-                button5_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_6(View view) {
-            if (button5_6.getText() == "" && (textView.getText() == "")){
-                button5_6.setText(krestt);
-                button5_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_7(View view) {
-            if (button5_7.getText() == "" && (textView.getText() == "")){
-                button5_7.setText(krestt);
-                button5_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_8(View view) {
-            if (button5_8.getText() == "" && (textView.getText() == "")){
-                button5_8.setText(krestt);
-                button5_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn5_9(View view) {
-            if (button5_9.getText() == "" && (textView.getText() == "")){
-                button5_9.setText(krestt);
-                button5_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_4(View view) {
+        if (button1_4.getText() == "" && (textView.getText() == "")){
+            button1_4.setText(krestt);
+            button1_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-        public void clcBtn6_1(View view) {
-            if (button6_1.getText() == "" && (textView.getText() == "")){
-                button6_1.setText(krestt);
-                button6_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_2(View view) {
-            if (button6_2.getText() == "" && (textView.getText() == "")){
-                button6_2.setText(krestt);
-                button6_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_3(View view) {
-            if (button6_3.getText() == "" && (textView.getText() == "")){
-                button6_3.setText(krestt);
-                button6_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_4(View view) {
-            if (button6_4.getText() == "" && (textView.getText() == "")){
-                button6_4.setText(krestt);
-                button6_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_5(View view) {
-            if (button6_5.getText() == "" && (textView.getText() == "")){
-                button6_5.setText(krestt);
-                button6_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_6(View view) {
-            if (button6_6.getText() == "" && (textView.getText() == "")){
-                button6_6.setText(krestt);
-                button6_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_7(View view) {
-            if (button6_7.getText() == "" && (textView.getText() == "")){
-                button6_7.setText(krestt);
-                button6_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_8(View view) {
-            if (button6_8.getText() == "" && (textView.getText() == "")){
-                button6_8.setText(krestt);
-                button6_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn6_9(View view) {
-            if (button6_9.getText() == "" && (textView.getText() == "")){
-                button6_9.setText(krestt);
-                button6_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_5(View view) {
+        if (button1_5.getText() == "" && (textView.getText() == "")){
+            button1_5.setText(krestt);
+            button1_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-        public void clcBtn7_1(View view) {
-            if (button7_1.getText() == "" && (textView.getText() == "")){
-                button7_1.setText(krestt);
-                button7_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_2(View view) {
-            if (button7_2.getText() == "" && (textView.getText() == "")){
-                button7_2.setText(krestt);
-                button7_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_3(View view) {
-            if (button7_3.getText() == "" && (textView.getText() == "")){
-                button7_3.setText(krestt);
-                button7_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_4(View view) {
-            if (button7_4.getText() == "" && (textView.getText() == "")){
-                button7_4.setText(krestt);
-                button7_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_5(View view) {
-            if (button7_5.getText() == "" && (textView.getText() == "")){
-                button7_5.setText(krestt);
-                button7_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_6(View view) {
-            if (button7_6.getText() == "" && (textView.getText() == "")){
-                button7_6.setText(krestt);
-                button7_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_7(View view) {
-            if (button7_7.getText() == "" && (textView.getText() == "")){
-                button7_7.setText(krestt);
-                button7_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_8(View view) {
-            if (button7_8.getText() == "" && (textView.getText() == "")){
-                button7_8.setText(krestt);
-                button7_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn7_9(View view) {
-            if (button7_9.getText() == "" && (textView.getText() == "")){
-                button7_9.setText(krestt);
-                button7_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_6(View view) {
+        if (button1_6.getText() == "" && (textView.getText() == "")){
+            button1_6.setText(krestt);
+            counter++;
+            button1_6.setBackgroundColor(Color.BLUE);
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-        public void clcBtn8_1(View view) {
-            if (button8_1.getText() == "" && (textView.getText() == "")){
-                button8_1.setText(krestt);
-                button8_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_2(View view) {
-            if (button8_2.getText() == "" && (textView.getText() == "")){
-                button8_2.setText(krestt);
-                button8_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_3(View view) {
-            if (button8_3.getText() == "" && (textView.getText() == "")){
-                button8_3.setText(krestt);
-                button8_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_4(View view) {
-            if (button8_4.getText() == "" && (textView.getText() == "")){
-                button8_4.setText(krestt);
-                button8_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_5(View view) {
-            if (button8_5.getText() == "" && (textView.getText() == "")){
-                button8_5.setText(krestt);
-                button8_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_6(View view) {
-            if (button8_6.getText() == "" && (textView.getText() == "")){
-                button8_6.setText(krestt);
-                button8_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_7(View view) {
-            if (button8_7.getText() == "" && (textView.getText() == "")){
-                button8_7.setText(krestt);
-                button8_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_8(View view) {
-            if (button8_8.getText() == "" && (textView.getText() == "")){
-                button8_8.setText(krestt);
-                button8_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn8_9(View view) {
-            if (button8_9.getText() == "" && (textView.getText() == "")){
-                button8_9.setText(krestt);
-                button8_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_7(View view) {
+        if (button1_7.getText() == "" && (textView.getText() == "")){
+            button1_7.setText(krestt);
+            button1_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-        public void clcBtn9_1(View view) {
-            if (button9_1.getText() == "" && (textView.getText() == "")){
-                button9_1.setText(krestt);
-                button9_1.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_2(View view) {
-            if (button9_2.getText() == "" && (textView.getText() == "")){
-                button9_2.setText(krestt);
-                button9_2.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_3(View view) {
-            if (button9_3.getText() == "" && (textView.getText() == "")){
-                button9_3.setText(krestt);
-                button9_3.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_4(View view) {
-            if (button9_4.getText() == "" && (textView.getText() == "")){
-                button9_4.setText(krestt);
-                button9_4.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_5(View view) {
-            if (button9_5.getText() == "" && (textView.getText() == "")){
-                button9_5.setText(krestt);
-                button9_5.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_6(View view) {
-            if (button9_6.getText() == "" && (textView.getText() == "")){
-                button9_6.setText(krestt);
-                button9_6.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_7(View view) {
-            if (button9_7.getText() == "" && (textView.getText() == "")){
-                button9_7.setText(krestt);
-                button9_7.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_8(View view) {
-            if (button9_8.getText() == "" && (textView.getText() == "")){
-                button9_8.setText(krestt);
-                button9_8.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
-            }
-        }
-        public void clcBtn9_9(View view) {
-            if (button9_9.getText() == "" && (textView.getText() == "")){
-                button9_9.setText(krestt);
-                button9_9.setBackgroundColor(Color.BLUE);
-                counter++;
-                isPlayerWinner();
-                if (textView.getText() == "" && counter >= 2) {
-                    for (int i2 = 0; i2 < 2; i2++){
-                        if (textView.getText() == ""){
-                            hodPC();}}
-                    counter = 0;
-                }
+    }
+    public void clcBtn1_8(View view) {
+        if (button1_8.getText() == "" && (textView.getText() == "")){
+            button1_8.setText(krestt);
+            button1_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
             }
         }
 
-    //множнство функций с проверкой победы игрока
+    }
+    public void clcBtn1_9(View view) {
+        if (button1_9.getText() == "" && (textView.getText() == "")){
+            button1_9.setText(krestt);
+            button1_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+
+
+    public void clcBtn2_1(View view) {
+        if (button2_1.getText() == "" && (textView.getText() == "")){
+            button2_1.setText(krestt);
+            button2_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_2(View view) {
+        if (button2_2.getText() == "" && (textView.getText() == "")){
+            button2_2.setText(krestt);
+            button2_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_3(View view) {
+        if (button2_3.getText() == "" && (textView.getText() == "")){
+            button2_3.setText(krestt);
+            button2_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_4(View view) {
+        if (button2_4.getText() == "" && (textView.getText() == "")){
+            button2_4.setText(krestt);
+            button2_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_5(View view) {
+        if (button2_5.getText() == "" && (textView.getText() == "")){
+            button2_5.setText(krestt);
+            button2_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_6(View view) {
+        if (button2_6.getText() == "" && (textView.getText() == "")){
+            button2_6.setText(krestt);
+            button2_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}                    counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_7(View view) {
+        if (button2_7.getText() == "" && (textView.getText() == "")){
+            button2_7.setText(krestt);
+            button2_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}                    counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_8(View view) {
+        if (button2_8.getText() == "" && (textView.getText() == "")){
+            button2_8.setText(krestt);
+            button2_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}                    counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn2_9(View view) {
+        if (button2_9.getText() == "" && (textView.getText() == "")){
+            button2_9.setText(krestt);
+            button2_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+
+    public void clcBtn3_1(View view) {
+        if (button3_1.getText() == "" && (textView.getText() == "")){
+            button3_1.setText(krestt);
+            button3_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_2(View view) {
+        if (button3_2.getText() == "" && (textView.getText() == "")){
+            button3_2.setText(krestt);
+            button3_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_3(View view) {
+        if (button3_3.getText() == "" && (textView.getText() == "")){
+            button3_3.setText(krestt);
+            button3_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_4(View view) {
+        if (button3_4.getText() == "" && (textView.getText() == "")){
+            button3_4.setText(krestt);
+            button3_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_5(View view) {
+        if (button3_5.getText() == "" && (textView.getText() == "")){
+            button3_5.setText(krestt);
+            button3_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_6(View view) {
+        if (button3_6.getText() == "" && (textView.getText() == "")){
+            button3_6.setText(krestt);
+            button3_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_7(View view) {
+        if (button3_7.getText() == "" && (textView.getText() == "")){
+            button3_7.setText(krestt);
+            button3_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_8(View view) {
+        if (button3_8.getText() == "" && (textView.getText() == "")){
+            button3_8.setText(krestt);
+            button3_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn3_9(View view) {
+        if (button3_9.getText() == "" && (textView.getText() == "")){
+            button3_9.setText(krestt);
+            button3_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+
+    public void clcBtn4_1(View view) {
+        if (button4_1.getText() == "" && (textView.getText() == "")){
+            button4_1.setText(krestt);
+            button4_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn4_2(View view) {
+        if (button4_2.getText() == "" && (textView.getText() == "")){
+            button4_2.setText(krestt);
+            button4_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn4_3(View view) {
+        if (button4_3.getText() == "" && (textView.getText() == "")){
+            button4_3.setBackgroundColor(Color.BLUE);
+            button4_3.setText(krestt);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn4_4(View view) {
+        if (button4_4.getText() == "" && (textView.getText() == "")){
+            button4_4.setText(krestt);
+            button4_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn4_5(View view) {
+        if (button4_5.getText() == "" && (textView.getText() == "")){
+            button4_5.setText(krestt);
+            button4_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+
+    }
+    public void clcBtn4_6(View view) {
+        if (button4_6.getText() == "" && (textView.getText() == "")){
+            button4_6.setText(krestt);
+            button4_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn4_7(View view) {
+        if (button4_7.getText() == "" && (textView.getText() == "")){
+            button4_7.setText(krestt);
+            button4_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn4_8(View view) {
+        if (button4_8.getText() == "" && (textView.getText() == "")){
+            button4_8.setText(krestt);
+            button4_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn4_9(View view) {
+        if (button4_9.getText() == "" && (textView.getText() == "")){
+            button4_9.setText(krestt);
+            button4_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+    public void clcBtn5_1(View view) {
+        if (button5_1.getText() == "" && (textView.getText() == "")){
+            button5_1.setText(krestt);
+            button5_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_2(View view) {
+        if (button5_2.getText() == "" && (textView.getText() == "")){
+            button5_2.setText(krestt);
+            button5_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_3(View view) {
+        if (button5_3.getText() == "" && (textView.getText() == "")){
+            button5_3.setText(krestt);
+            button5_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_4(View view) {
+        if (button5_4.getText() == "" && (textView.getText() == "")){
+            button5_4.setText(krestt);
+            button5_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_5(View view) {
+        if (button5_5.getText() == "" && (textView.getText() == "")){
+            button5_5.setText(krestt);
+            button5_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_6(View view) {
+        if (button5_6.getText() == "" && (textView.getText() == "")){
+            button5_6.setText(krestt);
+            button5_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_7(View view) {
+        if (button5_7.getText() == "" && (textView.getText() == "")){
+            button5_7.setText(krestt);
+            button5_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_8(View view) {
+        if (button5_8.getText() == "" && (textView.getText() == "")){
+            button5_8.setText(krestt);
+            button5_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn5_9(View view) {
+        if (button5_9.getText() == "" && (textView.getText() == "")){
+            button5_9.setText(krestt);
+            button5_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+    public void clcBtn6_1(View view) {
+        if (button6_1.getText() == "" && (textView.getText() == "")){
+            button6_1.setText(krestt);
+            button6_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_2(View view) {
+        if (button6_2.getText() == "" && (textView.getText() == "")){
+            button6_2.setText(krestt);
+            button6_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_3(View view) {
+        if (button6_3.getText() == "" && (textView.getText() == "")){
+            button6_3.setText(krestt);
+            button6_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_4(View view) {
+        if (button6_4.getText() == "" && (textView.getText() == "")){
+            button6_4.setText(krestt);
+            button6_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_5(View view) {
+        if (button6_5.getText() == "" && (textView.getText() == "")){
+            button6_5.setText(krestt);
+            button6_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_6(View view) {
+        if (button6_6.getText() == "" && (textView.getText() == "")){
+            button6_6.setText(krestt);
+            button6_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_7(View view) {
+        if (button6_7.getText() == "" && (textView.getText() == "")){
+            button6_7.setText(krestt);
+            button6_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_8(View view) {
+        if (button6_8.getText() == "" && (textView.getText() == "")){
+            button6_8.setText(krestt);
+            button6_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn6_9(View view) {
+        if (button6_9.getText() == "" && (textView.getText() == "")){
+            button6_9.setText(krestt);
+            button6_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+    public void clcBtn7_1(View view) {
+        if (button7_1.getText() == "" && (textView.getText() == "")){
+            button7_1.setText(krestt);
+            button7_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_2(View view) {
+        if (button7_2.getText() == "" && (textView.getText() == "")){
+            button7_2.setText(krestt);
+            button7_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_3(View view) {
+        if (button7_3.getText() == "" && (textView.getText() == "")){
+            button7_3.setText(krestt);
+            button7_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_4(View view) {
+        if (button7_4.getText() == "" && (textView.getText() == "")){
+            button7_4.setText(krestt);
+            button7_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_5(View view) {
+        if (button7_5.getText() == "" && (textView.getText() == "")){
+            button7_5.setText(krestt);
+            button7_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_6(View view) {
+        if (button7_6.getText() == "" && (textView.getText() == "")){
+            button7_6.setText(krestt);
+            button7_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_7(View view) {
+        if (button7_7.getText() == "" && (textView.getText() == "")){
+            button7_7.setText(krestt);
+            button7_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_8(View view) {
+        if (button7_8.getText() == "" && (textView.getText() == "")){
+            button7_8.setText(krestt);
+            button7_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn7_9(View view) {
+        if (button7_9.getText() == "" && (textView.getText() == "")){
+            button7_9.setText(krestt);
+            button7_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+    public void clcBtn8_1(View view) {
+        if (button8_1.getText() == "" && (textView.getText() == "")){
+            button8_1.setText(krestt);
+            button8_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_2(View view) {
+        if (button8_2.getText() == "" && (textView.getText() == "")){
+            button8_2.setText(krestt);
+            button8_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_3(View view) {
+        if (button8_3.getText() == "" && (textView.getText() == "")){
+            button8_3.setText(krestt);
+            button8_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_4(View view) {
+        if (button8_4.getText() == "" && (textView.getText() == "")){
+            button8_4.setText(krestt);
+            button8_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_5(View view) {
+        if (button8_5.getText() == "" && (textView.getText() == "")){
+            button8_5.setText(krestt);
+            button8_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_6(View view) {
+        if (button8_6.getText() == "" && (textView.getText() == "")){
+            button8_6.setText(krestt);
+            button8_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_7(View view) {
+        if (button8_7.getText() == "" && (textView.getText() == "")){
+            button8_7.setText(krestt);
+            button8_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_8(View view) {
+        if (button8_8.getText() == "" && (textView.getText() == "")){
+            button8_8.setText(krestt);
+            button8_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn8_9(View view) {
+        if (button8_9.getText() == "" && (textView.getText() == "")){
+            button8_9.setText(krestt);
+            button8_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+    public void clcBtn9_1(View view) {
+        if (button9_1.getText() == "" && (textView.getText() == "")){
+            button9_1.setText(krestt);
+            button9_1.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_2(View view) {
+        if (button9_2.getText() == "" && (textView.getText() == "")){
+            button9_2.setText(krestt);
+            button9_2.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_3(View view) {
+        if (button9_3.getText() == "" && (textView.getText() == "")){
+            button9_3.setText(krestt);
+            button9_3.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_4(View view) {
+        if (button9_4.getText() == "" && (textView.getText() == "")){
+            button9_4.setText(krestt);
+            button9_4.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_5(View view) {
+        if (button9_5.getText() == "" && (textView.getText() == "")){
+            button9_5.setText(krestt);
+            button9_5.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_6(View view) {
+        if (button9_6.getText() == "" && (textView.getText() == "")){
+            button9_6.setText(krestt);
+            button9_6.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_7(View view) {
+        if (button9_7.getText() == "" && (textView.getText() == "")){
+            button9_7.setText(krestt);
+            button9_7.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_8(View view) {
+        if (button9_8.getText() == "" && (textView.getText() == "")){
+            button9_8.setText(krestt);
+            button9_8.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+    public void clcBtn9_9(View view) {
+        if (button9_9.getText() == "" && (textView.getText() == "")){
+            button9_9.setText(krestt);
+            button9_9.setBackgroundColor(Color.BLUE);
+            counter++;
+            isPlayerWinner();
+            if (textView.getText() == "" && counter >= 2) {
+                for (int i2 = 0; i2 < 2; i2++){
+                    if (textView.getText() == ""){
+                        hodPC();}}
+                counter = 0;
+            }
+        }
+    }
+
+
+
+
+
+
+//множнство функций с проверкой победы игрока
 
         public void isPlayerWinner () {
             if ((button1_1.getText() == krestt && button1_2.getText() == krestt && button1_3.getText() == krestt
@@ -2053,22 +2055,122 @@ public class GameStart extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         }
         //множнство функций для реации компьютера после моего хода
 
+        private void botPC() {
+            if (button1_1.getText() == krestt && button1_2.getText() == krestt && button1_3.getText() == krestt && button1_4.getText() == krestt && button1_5.getText() != nol ){
+                if (button1_5.getText() == "") {
+                    button1_5.setText(nol);
+                    button1_5.setBackgroundColor(Color.RED);
+                    row = 2;
+        }}else
+            if (button2_1.getText() == krestt && button2_2.getText() == krestt && button2_3.getText() == krestt && button2_4.getText() == krestt && button2_5.getText() != nol ){ if (button2_5.getText() == "") { button2_5.setText(nol); button2_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button3_1.getText() == krestt && button3_2.getText() == krestt && button3_3.getText() == krestt && button3_4.getText() == krestt && button3_5.getText() != nol ){ if (button3_5.getText() == "") { button3_5.setText(nol); button3_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button4_1.getText() == krestt && button4_2.getText() == krestt && button4_3.getText() == krestt && button4_4.getText() == krestt && button4_5.getText() != nol ){ if (button4_5.getText() == "") { button4_5.setText(nol); button4_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button5_1.getText() == krestt && button5_2.getText() == krestt && button5_3.getText() == krestt && button5_4.getText() == krestt && button5_5.getText() != nol ){ if (button5_5.getText() == "") { button5_5.setText(nol); button5_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button6_1.getText() == krestt && button6_2.getText() == krestt && button6_3.getText() == krestt && button6_4.getText() == krestt && button6_5.getText() != nol ){ if (button6_5.getText() == "") { button6_5.setText(nol); button6_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button7_1.getText() == krestt && button7_2.getText() == krestt && button7_3.getText() == krestt && button7_4.getText() == krestt && button7_5.getText() != nol ){ if (button7_5.getText() == "") { button7_5.setText(nol); button7_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button8_1.getText() == krestt && button8_2.getText() == krestt && button8_3.getText() == krestt && button8_4.getText() == krestt && button8_5.getText() != nol ){ if (button8_5.getText() == "") { button8_5.setText(nol); button8_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button9_1.getText() == krestt && button9_2.getText() == krestt && button9_3.getText() == krestt && button9_4.getText() == krestt && button9_5.getText() != nol ){ if (button9_5.getText() == "") { button9_5.setText(nol); button9_5.setBackgroundColor(Color.RED); row = 2; }}else
+
+            if (button1_2.getText() == krestt && button1_3.getText() == krestt && button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() != nol ){ if (button1_6.getText() == "") { button1_6.setText(nol); button1_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button2_2.getText() == krestt && button2_3.getText() == krestt && button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() != nol ){ if (button2_6.getText() == "") { button2_6.setText(nol); button2_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button3_2.getText() == krestt && button3_3.getText() == krestt && button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() != nol ){ if (button3_6.getText() == "") { button3_6.setText(nol); button3_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button4_2.getText() == krestt && button4_3.getText() == krestt && button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() != nol ){ if (button4_6.getText() == "") { button4_6.setText(nol); button4_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button5_2.getText() == krestt && button5_3.getText() == krestt && button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() != nol ){ if (button5_6.getText() == "") { button5_6.setText(nol); button5_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button6_2.getText() == krestt && button6_3.getText() == krestt && button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() != nol ){ if (button6_6.getText() == "") { button6_6.setText(nol); button6_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button7_2.getText() == krestt && button7_3.getText() == krestt && button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() != nol ){ if (button7_6.getText() == "") { button7_6.setText(nol); button7_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button8_2.getText() == krestt && button8_3.getText() == krestt && button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() != nol ){ if (button8_6.getText() == "") { button8_6.setText(nol); button8_6.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button9_2.getText() == krestt && button9_3.getText() == krestt && button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() != nol ){ if (button9_6.getText() == "") { button9_6.setText(nol); button9_6.setBackgroundColor(Color.RED); row = 2; }}else
+
+            if (button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() == krestt && button1_8.getText() == krestt && button1_4.getText() != nol ){ if (button1_4.getText() == "") { button1_4.setText(nol); button1_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() == krestt && button2_8.getText() == krestt && button2_4.getText() != nol ){ if (button2_4.getText() == "") { button2_4.setText(nol); button2_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() == krestt && button3_8.getText() == krestt && button3_4.getText() != nol ){ if (button3_4.getText() == "") { button3_4.setText(nol); button3_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() == krestt && button4_8.getText() == krestt && button4_4.getText() != nol ){ if (button4_4.getText() == "") { button4_4.setText(nol); button4_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() == krestt && button5_8.getText() == krestt && button5_4.getText() != nol ){ if (button5_4.getText() == "") { button5_4.setText(nol); button5_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() == krestt && button6_8.getText() == krestt && button6_4.getText() != nol ){ if (button6_4.getText() == "") { button6_4.setText(nol); button6_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() == krestt && button7_8.getText() == krestt && button7_4.getText() != nol ){ if (button7_4.getText() == "") { button7_4.setText(nol); button7_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() == krestt && button8_8.getText() == krestt && button8_4.getText() != nol ){ if (button8_4.getText() == "") { button8_4.setText(nol); button8_4.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() == krestt && button9_8.getText() == krestt && button9_4.getText() != nol ){ if (button9_4.getText() == "") { button9_4.setText(nol); button9_4.setBackgroundColor(Color.RED); row = 2; }}else
+
+            if (button1_6.getText() == krestt && button1_7.getText() == krestt && button1_8.getText() == krestt && button1_9.getText() == krestt && button1_5.getText() != nol ){ if (button1_5.getText() == "") { button1_5.setText(nol); button1_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button2_6.getText() == krestt && button2_7.getText() == krestt && button2_8.getText() == krestt && button2_9.getText() == krestt && button2_5.getText() != nol ){ if (button2_5.getText() == "") { button2_5.setText(nol); button2_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button3_6.getText() == krestt && button3_7.getText() == krestt && button3_8.getText() == krestt && button3_9.getText() == krestt && button3_5.getText() != nol ){ if (button3_5.getText() == "") { button3_5.setText(nol); button3_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button4_6.getText() == krestt && button4_7.getText() == krestt && button4_8.getText() == krestt && button4_9.getText() == krestt && button4_5.getText() != nol ){ if (button4_5.getText() == "") { button4_5.setText(nol); button4_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button5_6.getText() == krestt && button5_7.getText() == krestt && button5_8.getText() == krestt && button5_9.getText() == krestt && button5_5.getText() != nol ){ if (button5_5.getText() == "") { button5_5.setText(nol); button5_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button6_6.getText() == krestt && button6_7.getText() == krestt && button6_8.getText() == krestt && button6_9.getText() == krestt && button6_5.getText() != nol ){ if (button6_5.getText() == "") { button6_5.setText(nol); button6_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button7_6.getText() == krestt && button7_7.getText() == krestt && button7_8.getText() == krestt && button7_9.getText() == krestt && button7_5.getText() != nol ){ if (button7_5.getText() == "") { button7_5.setText(nol); button7_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button8_6.getText() == krestt && button8_7.getText() == krestt && button8_8.getText() == krestt && button8_9.getText() == krestt && button8_5.getText() != nol ){ if (button8_5.getText() == "") { button8_5.setText(nol); button8_5.setBackgroundColor(Color.RED); row = 2; }}else
+            if (button9_6.getText() == krestt && button9_7.getText() == krestt && button9_8.getText() == krestt && button9_9.getText() == krestt && button9_5.getText() != nol ){ if (button9_5.getText() == "") { button9_5.setText(nol); button9_5.setBackgroundColor(Color.RED); row = 2; }}else
+
+            if (button1_3.getText() == krestt && button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() != nol && button1_2.getText() != nol) { if (button1_2.getText() == ""){button1_2.setText(nol); button1_2.setBackgroundColor(Color.RED);row +=2;} if (button1_7.getText() == ""){button1_7.setText(nol); button1_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button2_3.getText() == krestt && button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() != nol && button2_2.getText() != nol) { if (button2_2.getText() == ""){button2_2.setText(nol); button2_2.setBackgroundColor(Color.RED);row +=2;} if (button2_7.getText() == ""){button2_7.setText(nol); button2_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button3_3.getText() == krestt && button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() != nol && button3_2.getText() != nol) { if (button3_2.getText() == ""){button3_2.setText(nol); button3_2.setBackgroundColor(Color.RED);row +=2;} if (button3_7.getText() == ""){button3_7.setText(nol); button3_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button4_3.getText() == krestt && button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() != nol && button4_2.getText() != nol) { if (button4_2.getText() == ""){button4_2.setText(nol); button4_2.setBackgroundColor(Color.RED);row +=2;} if (button4_7.getText() == ""){button4_7.setText(nol); button4_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button5_3.getText() == krestt && button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() != nol && button5_2.getText() != nol) { if (button5_2.getText() == ""){button5_2.setText(nol); button5_2.setBackgroundColor(Color.RED);row +=2;} if (button5_7.getText() == ""){button5_7.setText(nol); button5_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button6_3.getText() == krestt && button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() != nol && button6_2.getText() != nol) { if (button6_2.getText() == ""){button6_2.setText(nol); button6_2.setBackgroundColor(Color.RED);row +=2;} if (button6_7.getText() == ""){button6_7.setText(nol); button6_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button7_3.getText() == krestt && button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() != nol && button7_2.getText() != nol) { if (button7_2.getText() == ""){button7_2.setText(nol); button7_2.setBackgroundColor(Color.RED);row +=2;} if (button7_7.getText() == ""){button7_7.setText(nol); button7_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button8_3.getText() == krestt && button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() != nol && button8_2.getText() != nol) { if (button8_2.getText() == ""){button8_2.setText(nol); button8_2.setBackgroundColor(Color.RED);row +=2;} if (button8_7.getText() == ""){button8_7.setText(nol); button8_7.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button9_3.getText() == krestt && button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() != nol && button9_2.getText() != nol) { if (button9_2.getText() == ""){button9_2.setText(nol); button9_2.setBackgroundColor(Color.RED);row +=2;} if (button9_7.getText() == ""){button9_7.setText(nol); button9_7.setBackgroundColor(Color.RED); row +=2;}}else
+
+            if (button1_3.getText() == krestt && button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() == nol && button1_2.getText() != nol) { button1_2.setText(nol); button1_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button2_3.getText() == krestt && button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() == nol && button2_2.getText() != nol) { button2_2.setText(nol); button2_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button3_3.getText() == krestt && button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() == nol && button3_2.getText() != nol) { button3_2.setText(nol); button3_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button4_3.getText() == krestt && button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() == nol && button4_2.getText() != nol) { button4_2.setText(nol); button4_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button5_3.getText() == krestt && button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() == nol && button5_2.getText() != nol) { button5_2.setText(nol); button5_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button6_3.getText() == krestt && button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() == nol && button6_2.getText() != nol) { button6_2.setText(nol); button6_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button7_3.getText() == krestt && button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() == nol && button7_2.getText() != nol) { button7_2.setText(nol); button7_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button8_3.getText() == krestt && button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() == nol && button8_2.getText() != nol) { button8_2.setText(nol); button8_2.setBackgroundColor(Color.RED); row = 2;}else
+            if (button9_3.getText() == krestt && button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() == nol && button9_2.getText() != nol) { button9_2.setText(nol); button9_2.setBackgroundColor(Color.RED); row = 2;}else
+
+            if (button1_3.getText() == krestt && button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_2.getText() == nol && button1_7.getText() != nol) { button1_7.setText(nol); button1_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button2_3.getText() == krestt && button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_2.getText() == nol && button2_7.getText() != nol) { button2_7.setText(nol); button2_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button3_3.getText() == krestt && button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_2.getText() == nol && button3_7.getText() != nol) { button3_7.setText(nol); button3_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button4_3.getText() == krestt && button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_2.getText() == nol && button4_7.getText() != nol) { button4_7.setText(nol); button4_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button5_3.getText() == krestt && button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_2.getText() == nol && button5_7.getText() != nol) { button5_7.setText(nol); button5_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button6_3.getText() == krestt && button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_2.getText() == nol && button6_7.getText() != nol) { button6_7.setText(nol); button6_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button7_3.getText() == krestt && button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_2.getText() == nol && button7_7.getText() != nol) { button7_7.setText(nol); button7_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button8_3.getText() == krestt && button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_2.getText() == nol && button8_7.getText() != nol) { button8_7.setText(nol); button8_7.setBackgroundColor(Color.RED); row = 2;}else
+            if (button9_3.getText() == krestt && button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_2.getText() == nol && button9_7.getText() != nol) { button9_7.setText(nol); button9_7.setBackgroundColor(Color.RED); row = 2;}else
+
+            if (button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() == krestt && button1_3.getText() == nol && button1_8.getText() != nol) { button1_8.setText(nol); button1_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() == krestt && button2_3.getText() == nol && button2_8.getText() != nol) { button2_8.setText(nol); button2_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() == krestt && button3_3.getText() == nol && button3_8.getText() != nol) { button3_8.setText(nol); button3_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() == krestt && button4_3.getText() == nol && button4_8.getText() != nol) { button4_8.setText(nol); button4_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() == krestt && button5_3.getText() == nol && button5_8.getText() != nol) { button5_8.setText(nol); button5_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() == krestt && button6_3.getText() == nol && button6_8.getText() != nol) { button6_8.setText(nol); button6_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() == krestt && button7_3.getText() == nol && button7_8.getText() != nol) { button7_8.setText(nol); button7_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() == krestt && button8_3.getText() == nol && button8_8.getText() != nol) { button8_8.setText(nol); button8_8.setBackgroundColor(Color.RED); row = 2;}else
+            if (button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() == krestt && button9_3.getText() == nol && button9_8.getText() != nol) { button9_8.setText(nol); button9_8.setBackgroundColor(Color.RED); row = 2;}else
+
+            if (button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() == krestt && button1_8.getText() == nol && button1_3.getText() != nol) { button1_3.setText(nol); button1_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() == krestt && button2_8.getText() == nol && button2_3.getText() != nol) { button2_3.setText(nol); button2_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() == krestt && button3_8.getText() == nol && button3_3.getText() != nol) { button3_3.setText(nol); button3_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() == krestt && button4_8.getText() == nol && button4_3.getText() != nol) { button4_3.setText(nol); button4_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() == krestt && button5_8.getText() == nol && button5_3.getText() != nol) { button5_3.setText(nol); button5_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() == krestt && button6_8.getText() == nol && button6_3.getText() != nol) { button6_3.setText(nol); button6_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() == krestt && button7_8.getText() == nol && button7_3.getText() != nol) { button7_3.setText(nol); button7_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() == krestt && button8_8.getText() == nol && button8_3.getText() != nol) { button8_3.setText(nol); button8_3.setBackgroundColor(Color.RED); row = 2;}else
+            if (button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() == krestt && button9_8.getText() == nol && button9_3.getText() != nol) { button9_3.setText(nol); button9_3.setBackgroundColor(Color.RED); row = 2;}else
+
+            if (button1_4.getText() == krestt && button1_5.getText() == krestt && button1_6.getText() == krestt && button1_7.getText() == krestt && button1_8.getText() != nol && button1_3.getText() != nol) { if (button1_3.getText() == ""){button1_3.setText(nol); button1_3.setBackgroundColor(Color.RED);row +=2;} if (button1_8.getText() == ""){button1_8.setText(nol); button1_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button2_4.getText() == krestt && button2_5.getText() == krestt && button2_6.getText() == krestt && button2_7.getText() == krestt && button2_8.getText() != nol && button2_3.getText() != nol) { if (button2_3.getText() == ""){button2_3.setText(nol); button2_3.setBackgroundColor(Color.RED);row +=2;} if (button2_8.getText() == ""){button2_8.setText(nol); button2_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button3_4.getText() == krestt && button3_5.getText() == krestt && button3_6.getText() == krestt && button3_7.getText() == krestt && button3_8.getText() != nol && button3_3.getText() != nol) { if (button3_3.getText() == ""){button3_3.setText(nol); button3_3.setBackgroundColor(Color.RED);row +=2;} if (button3_8.getText() == ""){button3_8.setText(nol); button3_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button4_4.getText() == krestt && button4_5.getText() == krestt && button4_6.getText() == krestt && button4_7.getText() == krestt && button4_8.getText() != nol && button4_3.getText() != nol) { if (button4_3.getText() == ""){button4_3.setText(nol); button4_3.setBackgroundColor(Color.RED);row +=2;} if (button4_8.getText() == ""){button4_8.setText(nol); button4_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button5_4.getText() == krestt && button5_5.getText() == krestt && button5_6.getText() == krestt && button5_7.getText() == krestt && button5_8.getText() != nol && button5_3.getText() != nol) { if (button5_3.getText() == ""){button5_3.setText(nol); button5_3.setBackgroundColor(Color.RED);row +=2;} if (button5_8.getText() == ""){button5_8.setText(nol); button5_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button6_4.getText() == krestt && button6_5.getText() == krestt && button6_6.getText() == krestt && button6_7.getText() == krestt && button6_8.getText() != nol && button6_3.getText() != nol) { if (button6_3.getText() == ""){button6_3.setText(nol); button6_3.setBackgroundColor(Color.RED);row +=2;} if (button6_8.getText() == ""){button6_8.setText(nol); button6_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button7_4.getText() == krestt && button7_5.getText() == krestt && button7_6.getText() == krestt && button7_7.getText() == krestt && button7_8.getText() != nol && button7_3.getText() != nol) { if (button7_3.getText() == ""){button7_3.setText(nol); button7_3.setBackgroundColor(Color.RED);row +=2;} if (button7_8.getText() == ""){button7_8.setText(nol); button7_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button8_4.getText() == krestt && button8_5.getText() == krestt && button8_6.getText() == krestt && button8_7.getText() == krestt && button8_8.getText() != nol && button8_3.getText() != nol) { if (button8_3.getText() == ""){button8_3.setText(nol); button8_3.setBackgroundColor(Color.RED);row +=2;} if (button8_8.getText() == ""){button8_8.setText(nol); button8_8.setBackgroundColor(Color.RED); row +=2;}}else
+            if (button9_4.getText() == krestt && button9_5.getText() == krestt && button9_6.getText() == krestt && button9_7.getText() == krestt && button9_8.getText() != nol && button9_3.getText() != nol) { if (button9_3.getText() == ""){button9_3.setText(nol); button9_3.setBackgroundColor(Color.RED);row +=2;} if (button9_8.getText() == ""){button9_8.setText(nol); button9_8.setBackgroundColor(Color.RED); row +=2;}}
+            isPCWinner();
+
+    }
         private void hodPC() {
+        if (row != 0)
+        {row = row -  2;}
+        botPC();
+        if (row == 0){
             Random random = new Random();
             random.nextInt(35);
             int buttonPcClick = 1 + random.nextInt(81);
@@ -2079,7 +2181,6 @@ public class GameStart extends AppCompatActivity {
                         button1_1.setText(nol);
                         button1_1.setBackgroundColor(Color.RED);
                         isPCWinner();
-
                     } else {
                         hodPC();
                     }
@@ -2813,6 +2914,7 @@ public class GameStart extends AppCompatActivity {
                         hodPC();
                     }
                     break;
+            }
 
             }
         }
@@ -2983,6 +3085,7 @@ public class GameStart extends AppCompatActivity {
             button9_8.setBackgroundColor(Color.WHITE);
             button9_9.setBackgroundColor(Color.WHITE);
             counter = 0;
+
 
         }
     }
